@@ -1,4 +1,3 @@
-# Trabalho-Proz
 # API - PHP
 Este código PHP fornece uma API simples para gerenciar dados de usuários em um banco de dados. Suporta três métodos HTTP: `POST`, `GET` e `DELETE`. A API permite criar novos usuários, obter uma lista de usuários e excluir usuários por ID.
 
