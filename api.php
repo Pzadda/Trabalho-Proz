@@ -22,9 +22,13 @@ if ($method == "POST") {
             $data["birthDate"]
         )
     ) {
-        $name_ = $data["name_"];
-        $email = $data["email"];
+        $name_ = trim($data["name_"]);
+        $email = trim($data["email"]);
         $password_ = $data["password_"];
+        $phone = trim($data["phone"]);
+        $adress = trim($data["adress"]);
+        $state = trim($data["state"]);
+        $birthDate = $data["birthDate"];
 
         if (!preg_match('/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[!@#$%^&*]).{8,}$/', $password_)) {
             http_response_code(400);
@@ -62,7 +66,7 @@ if ($method == "POST") {
     }
 
 } elseif ($method == "GET") {
-    $sql = "SELECT id, name_, email, phone, adress, state, created_at, birthdate FROM users";
+    $sql = "SELECT id, name_, email, phone, adress, state, birthdate FROM users";
     $result = $conn->query($sql);
 
     if ($result) {

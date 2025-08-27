@@ -1,0 +1,22 @@
+### LISTAR TODOS
+GET http://localhost/bager/API/api.php
+
+### BUSCAR POR ID
+GET http://localhost/bager/API/api.php
+
+### CRIAR NOVO
+POST http://localhost/bager/API/api.php
+Content-Type: application/json
+
+{
+  "name_": "Gabriel",
+  "email": "gab@gmail.com",
+  "password_": "SenhaBoa@123",
+  "phone": "31977747747",
+  "adress": "Rua Amaral, 28",
+  "state": "MG",
+  "birthDate": "2007-04-03"
+}
+
+### EXCLUIR
+DELETE http:C:\xampp\htdocs\bager\API
